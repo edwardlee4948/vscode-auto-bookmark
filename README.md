@@ -2,7 +2,7 @@
 
 ## Overview
 
-[![License: MIT](https://img.shields.io/github/license/microsoft/semantic-kernel)](https://github.com/microsoft/semantic-kernel/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/github/license/edwardlee4948/vscode-auto-bookmark)](https://github.com/edwardlee4948/vscode-auto-bookmark/blob/main/LICENSE)
 
 ## Requirements
 
