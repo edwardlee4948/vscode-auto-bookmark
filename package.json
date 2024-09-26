@@ -1,0 +1,95 @@
+{
+  "name": "auto-bookmark",
+  "displayName": "auto-bookmark",
+  "description": "when cursor stays on a line for a long time, it automatically bookmarks. Activate by ctrl+shift+alt+k. Default 30s but can be changed in settings.json",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "bookmark",
+    "jump",
+    "mark",
+    "navigation"
+  ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "capabilities": {
+    "virtualWorkspaces": true,
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
+  "icon": "images/icon.png",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/edwardlee4948/vscode-autobookmark/blob/master/README.md",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/edwardlee4948/vscode-autobookmark.git"
+  },
+  "bugs": {
+      "url": "https://github.com/edwardlee4948/vscode-autobookmark/issues"
+  },
+  "sponsor": {
+      "url": "https://github.com/sponsors/edwardlee4948"
+  },
+
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      
+      {
+        "command": "auto-bookmark.toggleActivate",
+        "title": "Auto Bookmark Activate/Deactivate"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "auto-bookmark.toggleActivate",
+        "key": "ctrl+shift+alt+k",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Auto Bookmark Settings",
+      "properties": {
+        "autoBookmark.timerDelay": {
+          "type": "number",
+          "default": 30000,
+          "description": "Set the timer delay in milliseconds before auto-bookmarking."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.93.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
+    "typescript": "^5.5.4",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  },
+  "extensionDependencies": [
+    "alefragnani.Bookmarks"
+  ]
+}
