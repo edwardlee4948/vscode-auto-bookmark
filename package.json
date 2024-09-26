@@ -2,7 +2,7 @@
   "name": "auto-bookmark",
   "displayName": "auto-bookmark",
   "description": "when cursor stays on a line for a long time, it automatically bookmarks. Activate by ctrl+shift+alt+k. Default 30s but can be changed in settings.json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "LeeHome",
   "engines": {
     "vscode": "^1.93.0"
@@ -30,23 +30,21 @@
   "license": "GPL-3.0",
   "homepage": "https://github.com/edwardlee4948/vscode-autobookmark/blob/master/README.md",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/edwardlee4948/vscode-autobookmark.git"
+    "type": "git",
+    "url": "https://github.com/edwardlee4948/vscode-autobookmark.git"
   },
   "bugs": {
-      "url": "https://github.com/edwardlee4948/vscode-autobookmark/issues"
+    "url": "https://github.com/edwardlee4948/vscode-autobookmark/issues"
   },
   "sponsor": {
-      "url": "https://github.com/sponsors/edwardlee4948"
+    "url": "https://github.com/sponsors/edwardlee4948"
   },
-
   "main": "./out/extension.js",
   "activationEvents": [
     "onStartupFinished"
   ],
   "contributes": {
     "commands": [
-
       {
         "command": "auto-bookmark.toggleActivate",
         "title": "Auto Bookmark Activate/Deactivate"
