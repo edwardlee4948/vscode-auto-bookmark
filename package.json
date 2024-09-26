@@ -1,6 +1,6 @@
 {
   "name": "auto-bookmark",
-  "displayName": "auto-bookmark",
+  "displayName": "Auto Bookmark",
   "description": "Automatically bookmark lines when your cursor stays on them for a set duration. This extension helps you effortlessly track important lines of code without the need for manual bookmarking. It's perfect for quickly navigating back to key sections in your project.",
   "version": "1.0.2",
   "publisher": "LeeHome",
