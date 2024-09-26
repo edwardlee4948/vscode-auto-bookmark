@@ -3,6 +3,7 @@
   "displayName": "auto-bookmark",
   "description": "when cursor stays on a line for a long time, it automatically bookmarks. Activate by ctrl+shift+alt+k. Default 30s but can be changed in settings.json",
   "version": "1.0.0",
+  "publisher": "LeeHome",
   "engines": {
     "vscode": "^1.93.0"
   },
@@ -45,7 +46,7 @@
   ],
   "contributes": {
     "commands": [
-      
+
       {
         "command": "auto-bookmark.toggleActivate",
         "title": "Auto Bookmark Activate/Deactivate"
